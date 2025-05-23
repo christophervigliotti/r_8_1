@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+# What
+
+https://github.com/flashohq/open-source-react-courses?tab=readme-ov-file  -> https://www.youtube.com/watch?v=f55qeKGgB_M&list=PLpPqplz6dKxW5ZfERUPoYTtNUNvrEebAR&index=20 
+
+# Boilerplate Stuff...
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
