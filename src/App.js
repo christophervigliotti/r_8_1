@@ -10,6 +10,7 @@ import './App.css';
 // The component is then exported so it can be used in other parts of the application
 // The component is named "App" and is the main component of the application
 function App() { 
+  /*
   const salutation = <h1>Hello</h1>;
   const name = <h1>Weird</h1>;
   // enclose multi-line JSX in parentheses
@@ -19,14 +20,26 @@ function App() {
       {name}
     </div>
   );
+  */
   return (
     <div className="App">
-      {greeting}
+      <User />
+    </div>
+  );
+}
+
+const User = () => { 
+  return (
+    <div>
+      <h1>Weird Al Yankovic</h1>
+      <h1>99</h1>
+      <h1>fake@email.com</h1>
     </div>
   );
 }
 
 // a javascript function 
+/*
 const getName = () => {
   return "Weird";
 }
@@ -36,5 +49,6 @@ const getName = () => {
 const GetNameComponent = () => {
   return <h1>Weird Al Yankovic</h1>;
 }
+*/
 
 export default App;
