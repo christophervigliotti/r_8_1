@@ -26,4 +26,15 @@ function App() {
   );
 }
 
+// a javascript function 
+const getName = () => {
+  return "Weird";
+}
+
+// a react component that returns a JSX element
+// name must start with a capital letter 
+const GetNameComponent = () => {
+  return <h1>Weird Al Yankovic</h1>;
+}
+
 export default App;
