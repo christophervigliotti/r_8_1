@@ -28,7 +28,7 @@ function App() {
       position
       company
   */
-  return (
+    return (
     <div className="App">
       {/* this could be a loop */}
       <Job {...jobs[0]} />
