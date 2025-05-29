@@ -30,10 +30,11 @@ function App() {
   */
   return (
     <div className="App">
-      {/* this could be a loop */}
-      <Job {...jobs[0]} />
-      <Job {...jobs[1]} />
-      <Job {...jobs[2]} />
+      <User name="Weird Al" age="52" email="blarg@fake.email" />
+      <User name="Normal Al" age={48} email="worker@works.work" />
+      <User {...props} />
+      <User {...userProps[0]} />
+      {/* <GetNameComponent /> */}
     </div>
   );
 }
@@ -44,29 +45,19 @@ const props = {
   email: "bill.grates@microchips.implanted"
 }
 
-const jobs = [
+const userProps = [
   {
-        salary: "5.00/year USD",
-        position: "CEO",
-        company: "Weird Al Inc."
-  },
-  {
-        salary: "0.666 Trillion TC/parsec (TC = Trump Credits)",
-        position: "CEO",
-        company: "Trump's House Of Tariffs"
-  },
-  {
-        salary: "15.00/hr USD",
-        position: "Hedge Trimmer",
-        company: "Scissorhands Inc."
+    name: "Array Al-ement Zero",
+    age:0,
+    email: "itworks!"
   }
 ]
 
-const Job = (props) => { 
+const User = (props) => { 
   return (
     <div>
-      <h1>{props.company}</h1>
-      <h2>position: {props.position} | salary: {props.salary}</h2>
+      <h1>{props.name}</h1>
+      <h2>age: {props.age} | email: {props.email}</h2>
     </div>
   );
 }
